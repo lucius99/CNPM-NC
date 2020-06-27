@@ -1,5 +1,5 @@
 var grid = document.querySelector(".canvas");
-var i;
+var it;
 
 var selected = null;
 
@@ -9,12 +9,13 @@ function itemClick(e) {
     }
     selected = e.target;
     selected.className = 'grid-item fill';
+    console.log(selected.id);
     return e.target.id;
 }
-for (i = 0; i < 16 * 9; ++i) {
+for (it = 0; it < 16 * 9; ++it) {
     var element = document.createElement("div");
     element.textContent = "new";
-    element.id = "el-" + i.toString(); 
+    element.id = "el-" + it.toString(); 
     element.className = "grid-item empty";
     element.addEventListener("click", itemClick);
     grid.appendChild(element);
