@@ -20,6 +20,6 @@ const readFile = (path) => {
 }
 
 app.get("/",(req,res)=>{
-    filePath = path.join(__dirname,"..","index.html");
+    filePath = path.join(__dirname,"..","test.html");
     res.sendFile(filePath);
 })
