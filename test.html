@@ -5,6 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
 <!-- External CSS Document(s) -->
 <link rel="stylesheet" type="text/css" href="css/styles.css" /> 
+<link rel="stylesheet" type="text/css" href="Widgets/ReportWidget/styles/scrollLayout.css"/>
 
 <title>Online Drawing Application | Web Design Deluxe</title> 
 <!-- Eternal JavaScript Document(s) -->
@@ -31,14 +32,39 @@
 </div> 
 <div id="yellowChalk_button"><img src="images/yellow.png" width="71" height="17" onclick="context.strokeStyle = '#fff600';" /></div> 
   
+
+
+
 <div id="greenChalk_button"> 
 <img src="images/green.png" width="71" height="17" onclick="context.strokeStyle = '#48ff00';" /></div> 
 <div id="blueChalk_button">
     <div id="blueChalk">
-        <img src="images/1.png" onclick="context.strokeStyle = '#001eff';" />
-        <img src="images/1.png" onclick="context.strokeStyle = '#001eff';" />
     </div> 
 </div> 
+
+<!-- Script for loop -->
+<script>
+    var x ="", i;
+    for (i=1; i<=10; i++) {
+      x = x + "<img class='sprite' src = 'images/" + i + ".png'/>";
+    }
+    document.getElementById("blueChalk").innerHTML = x;
+    for (i=1; i<=10; i++) {
+        document.getElementById("blueChalk").getElementsByClassName("sprite")[i].addEventListener("click",function (e){
+            imgSource=e.target.getAttribute("src");
+            console.log(imgSource);
+            //imgSource=document.getElementById("blueChalk").getElementsByClassName("sprite")[i].getAttribute("src");
+            //console.log(imgSource);
+        });
+    }
+</script>
+
+<script>
+    function getName() {
+    document.getElementById("result").value = document.getElementById("img1").src;
+ }
+</script>
+
 <div id="pinkChalk_button"><img src="images/pink.png" width="71" height="17" onclick="context.strokeStyle = '#ff00d2';" /></div> 
   
 </div> 
