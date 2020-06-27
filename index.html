@@ -1,40 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>2d terrain</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="/css/index.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    
-    <script src="/js/index.js"></script>
-  </head>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+    <title>Document</title>
+</head>
 
-  <body>
-      <div class="container">
-        <div class="container">
-            <div class="row" id="img">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-6">
-                  <script>
-                    getImg();
-                  </script>
-                    <!-- <div class="gallery_pt">
-                      
+<body>
+    <h1>
+        2D GAME LANDSCAPE
+    </h1>
+
+    <div>
+        <div class="grid-container" id="canvas">
+            <script>
+                let i = 0;
+                let item = [];
+                var canvas = document.getElementById("canvas");
+                console.log(canvas);
+                for (i = 0; i < 144; i++) {
+                    var div = document.createElement("div");
+                    div.textContent = "4";
+                    canvas.appendChild(div);
+                }
+            </script>
+        </div>
+        <div class="container123">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col span-1-of-2">
+                        <div class="gallery_pt">
+                            <a href="#" title=""><img src="/sprite/Tiles/1.png" alt="" width="50px" height="50px"
+                                    id="a"></a>
+                            <a href="#" title=""><img src="/sprite/Tiles/2.png" alt="" width="50px" height="50px"></a>
+
+                        </div>
+                    </div>
+                    <div class="col span-1-of-2">
+                        <div class="gallery_pt">
+                            <a href="#" title=""><img src="/sprite/Tiles/3.png" alt="" width="50px" height="50px"></a>
+                            <a href="#" title=""><img src="/sprite/Tiles/4.png" alt="" width="50px" height="50px"></a>
+
+                        </div>
+                        <script>
+                            var a = document.getElementById("a");
+                            
+                            a.onclick = function () {
+                                console.log(a.id);
+                            }
+
+                        </script>
                     </div> -->
+                    <div class="row" id="img">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-6">
+                          <script>
+                            getImg();
+                          </script>
+                    </div>
+
+
+                </div>
             </div>
-          </div>
-      </div>
-      
+        </div>
 
+</body>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
 </html>
