@@ -1,0 +1,102 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+._product {
+  background-color: #f1f0f1;
+  margin: 10px;
+  padding: 10px;
+  font-size: 30px;
+  width: 29%;
+  height: 440px;
+  border: 1px solid black;
+  display: inline-block;
+  /* height: 420px; */
+}
+
+._image img{
+  width: 280px;
+  height: 350px;
+  alt: png;
+  position: relative;
+  left: 25px;
+}
+
+
+
+._product contentProduct{
+  position: absolute;
+}
+.contentProduct{
+  bottom: 0px;
+  left: 35px;
+  position: relative;
+}
+.contentProduct h3{
+  margin: 0px;
+}
+.contentProduct p{
+  margin: 0px;
+}
+.listProduct{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+/* quang cao */
+.slice{
+    padding-top: 100px;
+    margin-top: 30px;
+    position: relative;
+}
+.slice .left{
+    width: 400px;
+    position: absolute;
+    left: 75px;
+    top: 220px;
+}
+.slice .left h2{
+    font-size: 80px;
+    color: #484545;
+}
+.left p{
+    margin-top: 20px;
+}
+
+
+
+
+.listProduct{
+  width: 100%;
+  height: auto;
+  float: left;
+}
+.bar_view{
+  width: 1200px;
+  height: 33px;
+  background-color: yellow;
+  margin: 0 auto;
+  padding-top: 90px;
+  margin-top: 30px;
+}
+.icon{
+  width: 150px;
+  height: 33px;
+  float: right;
+  display: block;
+}
+.bar_view img{
+  width:30px;
+  height: 30px;
+}
+
+.price{
+ position: relative;
+ color: red;
+ left: 220px;
+ bottom: 20px;
+}

@@ -286,3 +286,13 @@ window.onload = function() {
            function SetColor(id) { // Set the color of the drawing tool when a color swatch is clicked 
               context.strokeStyle = document.getElementById(id).style.backgroundColor; 
               }
+
+var img = new Image();
+
+img.onload = function() {
+              
+                  // Start resizing
+              
+};
+img.src = src;
+ctx.drawImage(image, 0, 0, 1024, 576);

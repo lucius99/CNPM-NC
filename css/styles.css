@@ -48,11 +48,30 @@ body {
 
 #redChalk_button { cursor:pointer; position:absolute; z-index:99999; top:620px; left:160px; } 
 #greenChalk_button { cursor:pointer; position:absolute; z-index:99999; top:620px; left:400px; } 
-#blueChalk_button { cursor:pointer; position:absolute; z-index:99999; top:620px; left:480px; } 
+#blueChalk_button {    
+   width: 210px;
+   height: 530px;
+   margin: 0 auto;
+   background-color: red;
+   cursor:pointer; position:absolute; z-index:99999; top:90px; left:925px;} 
+#blueChalk img{
+   position: relative;
+   width: 100px;
+   height: 100px;
+}
 #yellowChalk_button { cursor:pointer; position:absolute; z-index:99999; top:620px; left:320px; } 
 #orangeChalk_button { cursor:pointer; position:absolute; z-index:99999; top:620px; left:240px; } 
 #pinkChalk_button { cursor:pointer; position:absolute; z-index:99999; top:620px; left:560px; } 
 #whiteChalk_button { cursor:pointer; position:absolute; z-index:99999; top:620px; left:80px; } 
+
+#container
+{
+   position: absolute;
+   cursor:pointer;
+   width: 1200px;
+   margin: 0 auto;
+   background-color: red;
+}
 #eraser { 
  position:absolute; 
  background:url(../images/eraser.png) no-repeat; 
@@ -149,4 +168,42 @@ body {
     left:5px; 
     z-index:999999; 
     cursor:pointer; 
+    }
+
+    html{
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      color: #5a5a5a;
+      background-color: #ffffff;
+      text-rendering: optimizeLegibility;
+  }
+  
+  .grid-container {
+      display: grid;
+      grid-template-columns: repeat(16, 3.75vmax);
+      grid-template-rows: repeat(9, 6.666vmin);
+      grid-gap: 0px;
+      background-color: #111111;
+      padding: 0px;
+    }
+    
+    #canvas {
+        padding: 10px;
+        margin-top: 0 auto;
+        width: 60vmax;
+        height: 60vmin;
+        top :100;
+    }
+    
+    .grid-container > div {
+        display: block;
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 0px 0;
+        font-size: 20px;
+        width: 50;
+        height: 50;
+    }
+    .grid-item {
+        border: #000000 1px solid;
     }
