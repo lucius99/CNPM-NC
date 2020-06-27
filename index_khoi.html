@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>
+        2D GAME LANDSCAPE
+    </h1>
+    <div class="grid-container" id = "canvas">
+        <script>
+            let i = 0;
+            let item = [];
+            var canvas = document.getElementById("canvas");
+            console.log(canvas);
+            for (i = 0; i < 144; i++) {
+            var div = document.createElement("div");
+            div.textContent = "4";
+            canvas.appendChild(div);
+            }
+        </script>
+    </div>
+</body>
+
+</html>
