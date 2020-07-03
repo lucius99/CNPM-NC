@@ -25,8 +25,8 @@ const readFile = (path) => {
 }
 
 app.get("/",(req,res)=>{
-    filePath = path.join(__dirname,"..","index.html");
-    res.render(filePath,{arr: arr});
+    filePath = path.join(__dirname,"..","test.html");
+    res.render(filePath);
 })
 
 app.route("/api")
