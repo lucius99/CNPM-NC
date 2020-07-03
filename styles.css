@@ -13,18 +13,17 @@ html{
     grid-gap: 0px;
     background-color: #111111;
     padding: 0px;
-    margin-left: 5vw;
-}
+  }
   
-.canvas {
+  #canvas {
       padding: 10px;
       margin-top: 0 auto;
       width: 60vmax;
       height: 60vmin;
       top :100;
-}
+  }
   
-.grid-item {
+  .grid-container > div {
       display: block;
       background-color: rgba(255, 255, 255, 0.8);
       text-align: center;
@@ -32,36 +31,20 @@ html{
       font-size: 20px;
       width: 50;
       height: 50;
-      cursor: pointer;
-}
-.grid-item {
+  }
+  .grid-item {
       border: #000000 1px solid;
   }
 
-.container123{
-    position: absolute;
-    right: 0vw;
-    top: 0vh;
-    /* float: left; */
-    margin-top: 100px;
-    margin-right: 5vh;
-}
-
-.container{
-    overflow: scroll;
-    height: 420px;
-    width:150px;
-    overflow-x: hidden;
-}
-.parent {
-}
-
-
-
-.empty {
-  border: none;
-}
-
-.fill {
-    border: #000000 1px solid;
-}
+  .container123{
+      position: absolute;
+      right: 0vw;
+      top: 0vh;
+      margin-top: 100px;
+      margin-right: 5vh;
+  }
+  .container{
+      overflow: scroll;
+      height: 420px;
+      width: 120px;
+  }
