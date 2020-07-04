@@ -58,6 +58,9 @@ html{
   }
   .gallery_pt{
     position: relative;
+    display: inline-block;
+    width: 60px;
+
 
 }
 .gallery_pt img{
