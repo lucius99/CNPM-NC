@@ -1,6 +1,6 @@
 let arr = [];
 
-var imagechange = ";"
+var imagechange = "";
 var html="";
 
 async function getImg(){
@@ -41,15 +41,22 @@ function itemClick(e) {
     selected.className = 'grid-item fill';
     selected.textContent = "";
     selected.style.backgroundImage = 'url('+imagechange+')';
+    selected.style.backgroundSize = "50px 50px";
+    selected.style.backgroundRepeat="round";
     return e.target.id;
 }
 for (it = 0; it < 16 * 9; ++it) {
     var element = document.createElement("div");
-    element.textContent = "new";
+    element.textContent = "";
     element.id = "el-" + it.toString(); 
     element.className = "grid-item empty";
     element.addEventListener("click", itemClick);
     grid.appendChild(element);
 }
-
+function btnRemoveClick() {
+	if (selected == null) {
+		return;
+	}
+	imagechange = '';
+}
 var items = document.querySelectorAll('grid-item');
