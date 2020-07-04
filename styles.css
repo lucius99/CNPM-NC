@@ -21,7 +21,6 @@ html{
       width: 60vmax;
       height: 60vmin;
       top :100;
-      background:  none;
   }
   
   .grid-container > div {
@@ -32,10 +31,18 @@ html{
       font-size: 20px;
       width: 50;
       height: 50;
+      background: #ffffff;
   }
   .grid-item {
       border: #222222 1px dotted;
   }
+/* 
+  .empty{
+      border: none;
+  }
+  .fill {
+      border: #222222 1px dotted;
+  } */
 
   .container123{
       position: absolute;
@@ -57,4 +64,31 @@ html{
     position: relative;
     width: 50px;
     height: 50px;
+}
+
+
+.btnRemove{
+    padding-left: 5px;
+    /* display: inline; */
+    background-color: red;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.btnExport{
+    padding-left: 5px;
+    /* display: inline; */
+    background-color: blueviolet;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+i{
+    padding-right: 5px;
 }

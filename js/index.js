@@ -49,7 +49,7 @@ for (it = 0; it < 16 * 9; ++it) {
     var element = document.createElement("div");
     element.textContent = "";
     element.id = "el-" + it.toString(); 
-    element.className = "grid-item empty";
+    element.className = "grid-item fill";
     element.addEventListener("click", itemClick);
     grid.appendChild(element);
 }
@@ -57,6 +57,18 @@ function btnRemoveClick() {
 	if (selected == null) {
 		return;
 	}
-	imagechange = '';
+    imagechange = '';
+    selected.c
 }
-var items = document.querySelectorAll('grid-item');
+var items = document.querySelectorAll('.grid-item');
+
+var bt = document.getElementById("btn");
+async function exClick(){
+    // items.forEach(e=>e.className="grid-item empty");
+    html2canvas(document.querySelector(".canvas")).then(canvas => {
+        var imgData = canvas.toDataURL("image/png");
+        var newData = imgData.replace(/^data:image\/png/, "data:application/octet-stream");
+        window.location.href=newData;
+    });
+    // items.forEach(e=>e.className="grid-item fill");
+};
