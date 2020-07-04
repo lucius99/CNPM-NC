@@ -1,6 +1,8 @@
+// console.log(getImg());
+getImg().finally(data=>console.log(data));
+
 var grid = document.querySelector(".canvas");
 var it;
-
 var selected = null;
 
 function itemClick(e) {
@@ -8,7 +10,10 @@ function itemClick(e) {
         selected.className = "grid-item empty";
     }
     selected = e.target;
+    //console.log(selected);
     selected.className = 'grid-item fill';
+    selected.textContent = "";
+    selected.style.backgroundImage = "url('../sprite/Tiles/1.png')"
     console.log(selected.id);
     return e.target.id;
 }
